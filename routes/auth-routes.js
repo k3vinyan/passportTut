@@ -6,7 +6,8 @@ router.get('/login', (req, res) => {
 })
 
 router.get('/logout', (req, res) => {
-    res.send('logout')
+    res.logout();
+    res.redirect('/');
 })
 
 
